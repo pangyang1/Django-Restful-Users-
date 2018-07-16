@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Show Users {{ user.id }}</title>
+    </head>
+    <body>
+        <h1>User {{ user.id }}</h1>
+        <p>Full Name: {{ user.name }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>Created_at: {{ user.created_at }}</p>
+        <p><a href="{% url 'restful:index' %}">Go Back</a> | <a href="{% url 'restful:delete' id=user.id %}">Delete</a><a> 
+    </body>
+</html>
